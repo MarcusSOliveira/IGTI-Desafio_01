@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Trabalho pratico 01 - RGB</title>
+    <link rel="stylesheet" href="../css/desafio1.css">
+    <script src="../js/desafio1.js"></script>
+      
+</head>
+<body>
+
+    <div class="Vermelho">
+        <strong>(R) Vermelho:</strong> 
+        <input type="range" min="0" max="255" lenght 250 id="inputRed" oninput="lblVermelho.value=value" 
+        onchange=func()>
+        <input type="text" value="125" id="lblVermelho" disabled >                   
+        
+    </div>
+
+    <div class="Verde">
+        <strong>(G) Verde:</strong>        
+        <input type="range" min="0" max="255" lenght 250 id="inputGreen" oninput="lblVerde.value=value"
+        onchange=func()>
+        <input type="text" value="125" id="lblVerde" disabled>        
+    </div>
+
+    <div class="Azul">
+        <strong>(B) Azul:&nbsp&nbsp</strong>
+        <input type="range" min="0" max="255" lenght 250 id="inputBlue" oninput="lblAzul.value=value" onchange="func()">        
+        <input type="text" value="125" id="lblAzul" disabled>        
+    </div>
+
+    <canvas width="120" height="120">
+
+    </canvas>
+</body>
+</html>
